@@ -1,5 +1,7 @@
 package com.example.hw01cst438;
 
+import com.example.hw01cst438.model.UserRoom;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -10,8 +12,10 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
+
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
     }
+
 }

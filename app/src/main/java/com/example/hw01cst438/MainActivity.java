@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(pass == true){
                     Intent intent = new Intent(MainActivity.this, LandingActivity.class);
-                    Toast.makeText(MainActivity.this, "Welcome!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Welcome! " + username + "!", Toast.LENGTH_LONG).show();
                     startActivity(intent);
                 }else if(pass == false){
                     if(userRight && !passRight){
