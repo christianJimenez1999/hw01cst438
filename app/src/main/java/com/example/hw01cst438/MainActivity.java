@@ -18,21 +18,15 @@ import com.example.hw01cst438.model.UserRoom;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    //UserDao dao = UserRoom.getUserRoom(this).dao();
-
-    //UserRoom db = Room.databaseBuilder(getApplicationContext(), UserRoom.class, "UserDB").build();
-
-
-
     TextView usrn;
     TextView pwrd;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent intent = MainActivity2.getIntent(getApplicationContext(), 42);
 
         UserRoom.getUserRoom(this).loadData(this);
         final UserDao dao = UserRoom.getUserRoom(this).dao();
